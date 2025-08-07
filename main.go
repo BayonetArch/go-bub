@@ -122,7 +122,7 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 		switch msg.String() {
 
-		case "alt+e":
+		case "alt+e","ctrl+c":
 			return m, tea.Quit
 
 		case "enter", "alt+m":
